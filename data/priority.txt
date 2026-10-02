@@ -1,0 +1,12 @@
+vergil/aen1.txt
+vergil/aen2.txt
+vergil/aen3.txt
+vergil/aen4.txt
+vergil/aen5.txt
+vergil/aen6.txt
+vergil/aen7.txt
+vergil/aen8.txt
+vergil/aen9.txt
+vergil/aen10.txt
+vergil/aen11.txt
+vergil/aen12.txt
