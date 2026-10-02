@@ -5,9 +5,9 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "latin-macronizer"
 version = "0.1.0"
-description = "Add your description here"
+description = "Mark long vowels in Latin text"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.11"
 dependencies = [
     "google-genai>=2.20.0",
     "la-core-web-lg",
