@@ -5,10 +5,25 @@ Your task is to review the current codebase and fix the current issues.
 Current Issue:
 <issue>
 Run python scripts/gemini.py
-  File "/home/runner/work/latin-macronizer/latin-macronizer/scripts/gemini.py", line 231
-    text = re.sub(r"(?<!\\)\[", r"\[", text)         text = re.sub(r"(?<!\\)\]", r"\]", text)
-                                                     ^^^^
-SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/home/runner/work/latin-macronizer/latin-macronizer/scripts/gemini.py", line 932, in <module>
+    pipeline = MacronCorpusPipeline(config=config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/latin-macronizer/latin-macronizer/scripts/gemini.py", line 622, in __init__
+    self.preprocessor = LatinPreprocessor()
+                        ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/latin-macronizer/latin-macronizer/scripts/gemini.py", line 262, in __init__
+    self.macronizer = Macronizer()
+                      ^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/latin_macronizer/macronizer.py", line 23, in __init__
+    self.wordlist = Wordlist(db_path)
+                    ^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/latin_macronizer/wordlist.py", line 37, in __init__
+    self.loadwordsfromfile(MACRONS_FILE)
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/latin_macronizer/wordlist.py", line 58, in loadwordsfromfile
+    with open(filename, 'r', encoding='utf-8') as plaindbfile:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/latin_macronizer/macrons.txt'
 Error: Process completed with exit code 1.
 </issue>
 
@@ -1938,7 +1953,8 @@ class TextEscaper:
 
     @classmethod
     def escape_raw_brackets(cls, text: str) -> str:
-        text = re.sub(r"(?<!\\)\[", r"\[", text)         text = re.sub(r"(?<!\\)\]", r"\]", text)
+        text = re.sub(r"(?<!\\)\[", r"\[", text)
+        text = re.sub(r"(?<!\\)\]", r"\]", text)
         text = re.sub(r"(?<!\\)<", r"\<", text)
         text = re.sub(r"(?<!\\)>", r"\>", text)
         return text
@@ -1947,7 +1963,8 @@ class TextEscaper:
     def mask(cls, text: str) -> str:
         text = text.replace(r"\<", cls.MASK_LANGLE)
         text = text.replace(r"\>", cls.MASK_RANGLE)
-        text = text.replace(r"\[", cls.MASK_LBRACKET)         text = text.replace(r"\]", cls.MASK_RBRACKET)
+        text = text.replace(r"\[", cls.MASK_LBRACKET)
+        text = text.replace(r"\]", cls.MASK_RBRACKET)
         return text
 
     @classmethod
