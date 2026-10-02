@@ -5,7 +5,9 @@ import logging
 import os
 import re
 import shutil
+import signal
 import subprocess
+import sys
 import time
 import unicodedata
 from dataclasses import asdict, dataclass, field
@@ -89,6 +91,7 @@ class PipelineConfig:
     max_validation_attempts: int = 3
     max_api_retries: int = 4
     api_timeout_seconds: float = 60.0
+    max_run_seconds: float = 19800.0  # 5.5 hours maximum run timer cap
     thinking_level: str = "high"
     raw_repo_url: str = "https://github.com/cltk/lat_text_latin_library.git"
 
@@ -228,8 +231,7 @@ class TextEscaper:
 
     @classmethod
     def escape_raw_brackets(cls, text: str) -> str:
-        text = re.sub(r"(?<!\\)\[", r"\[", text)
-        text = re.sub(r"(?<!\\)\]", r"\]", text)
+        text = re.sub(r"(?<!\\)\[", r"\[", text)         text = re.sub(r"(?<!\\)\]", r"\]", text)
         text = re.sub(r"(?<!\\)<", r"\<", text)
         text = re.sub(r"(?<!\\)>", r"\>", text)
         return text
@@ -238,8 +240,7 @@ class TextEscaper:
     def mask(cls, text: str) -> str:
         text = text.replace(r"\<", cls.MASK_LANGLE)
         text = text.replace(r"\>", cls.MASK_RANGLE)
-        text = text.replace(r"\[", cls.MASK_LBRACKET)
-        text = text.replace(r"\]", cls.MASK_RBRACKET)
+        text = text.replace(r"\[", cls.MASK_LBRACKET)         text = text.replace(r"\]", cls.MASK_RBRACKET)
         return text
 
     @classmethod
@@ -717,6 +718,26 @@ class MacronCorpusPipeline:
         if current_chunk:
             yield "\n".join(current_chunk)
 
+    def _push_in_script_checkpoint(self) -> None:
+        """Executes git commit and push directly after processing a file."""
+        try:
+            # Commit and push runner repo state (data/ checkpoint & logs)
+            subprocess.run(["git", "config", "user.name", "github-actions[bot]"], check=False)
+            subprocess.run(["git", "config", "user.email", "github-actions[bot]@users.noreply.github.com"], check=False)
+            subprocess.run(["git", "add", "data/"], check=False)
+            subprocess.run(["git", "commit", "-m", "chore: update macronization checkpoint"], check=False)
+            subprocess.run(["git", "push"], check=False)
+
+            # Commit and push output repo processed texts
+            if self.config.macronized_dir.exists():
+                subprocess.run(["git", "config", "user.name", "github-actions[bot]"], cwd=self.config.macronized_dir, check=False)
+                subprocess.run(["git", "config", "user.email", "github-actions[bot]@users.noreply.github.com"], cwd=self.config.macronized_dir, check=False)
+                subprocess.run(["git", "add", "."], cwd=self.config.macronized_dir, check=False)
+                subprocess.run(["git", "commit", "-m", "chore: automated corpus update"], cwd=self.config.macronized_dir, check=False)
+                subprocess.run(["git", "push"], cwd=self.config.macronized_dir, check=False)
+        except Exception as e:
+            logger.warning(f"In-script git push encountered non-fatal error: {e}")
+
     async def _process_file(self, raw_file: Path) -> None:
         rel_path = str(raw_file.relative_to(self.config.raw_dir))
         out_file = self.config.macronized_dir / rel_path
@@ -724,25 +745,29 @@ class MacronCorpusPipeline:
 
         is_priority = self._is_priority_file(raw_file)
 
+        raw_text = raw_file.read_text(encoding="utf-8")
+        chunks = list(self.generate_chunks(raw_text))
+        total_chunks = len(chunks)
+
         last_chunk = self.state.file_progress.get(rel_path, -1)
         if last_chunk == -1 and not out_file.exists():
             out_file.write_text("", encoding="utf-8")
 
-        raw_text = raw_file.read_text(encoding="utf-8")
-        file_bytes = raw_file.stat().st_size
-        chunk_idx = 0
+        if last_chunk >= 0:
+            status_msg = f"INTERRUPTED PREVIOUSLY (resuming from chunk {last_chunk + 2}/{total_chunks}, {last_chunk + 1} chunks completed previously)"
+        else:
+            status_msg = f"FRESH START (0/{total_chunks} chunks completed)"
+
+        logger.info(f"Processing file: {rel_path} | Total chunks: {total_chunks} | Status: {status_msg}")
 
         today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
-        for chunk_text in self.generate_chunks(raw_text):
-            current_idx = chunk_idx
-            chunk_idx += 1
-
+        for current_idx, chunk_text in enumerate(chunks):
             if current_idx <= last_chunk:
                 continue
 
             if is_priority:
-                self.session_stats.priority_files_worked_on[rel_path] = f"In Progress (Chunk {current_idx + 1})"
+                self.session_stats.priority_files_worked_on[rel_path] = f"In Progress (Chunk {current_idx + 1}/{total_chunks})"
 
             resolved_chunk, stats = await self.resolver.resolve_chunk(
                 chunk_text, rel_path=rel_path, chunk_idx=current_idx + 1
@@ -767,7 +792,7 @@ class MacronCorpusPipeline:
             self.session_stats.slots_unfilled_today += (stats.total_slots - stats.resolved_slots)
 
             tqdm.write(
-                f"[{rel_path}] Chunk {current_idx + 1}: Resolved {stats.resolved_slots}/{stats.total_slots} slots."
+                f"[{rel_path}] Chunk {current_idx + 1}/{total_chunks}: Resolved {stats.resolved_slots}/{stats.total_slots} slots."
             )
 
         self.state.completed_files.append(rel_path)
@@ -778,6 +803,7 @@ class MacronCorpusPipeline:
             self.session_stats.priority_files_worked_on[rel_path] = "Completed"
 
         logger.info(f"Successfully finished file: {rel_path}")
+        self._push_in_script_checkpoint()
 
     def _print_run_summary(self, all_raw_files: List[Path]) -> None:
         elapsed = time.time() - self.session_stats.start_time
@@ -897,13 +923,32 @@ class MacronCorpusPipeline:
 
         try:
             for raw_file in pending_files:
+                elapsed = time.time() - self.session_stats.start_time
+                if elapsed >= self.config.max_run_seconds:
+                    logger.info(
+                        f"Execution time limit reached ({elapsed:.1f}s >= {self.config.max_run_seconds:.1f}s). Stopping run gracefully."
+                    )
+                    break
                 await self._process_file(raw_file)
-            logger.info("Corpus processing complete! All files processed.")
+            else:
+                logger.info("Corpus processing complete! All files processed.")
         except DailyQuotaExhaustedException as e:
             logger.info(f"Stopping execution for today: {e}")
         finally:
             self.checkpoint_manager.save(self.state)
             self._print_run_summary(all_raw_files)
+
+
+def setup_signal_handlers(pipeline_ref: List[Optional[MacronCorpusPipeline]]) -> None:
+    def handle_exit(signum, frame):
+        sig_name = signal.Signals(signum).name
+        logger.warning(f"Received exit signal {sig_name} ({signum}). Preserving checkpoint state...")
+        if pipeline_ref[0]:
+            pipeline_ref[0].checkpoint_manager.save(pipeline_ref[0].state)
+        sys.exit(0)
+
+    signal.signal(signal.SIGINT, handle_exit)
+    signal.signal(signal.SIGTERM, handle_exit)
 
 
 def parse_args() -> argparse.Namespace:
@@ -920,6 +965,12 @@ def parse_args() -> argparse.Namespace:
         default=Path("data/priority_inputs"),
         help="Directory containing custom external text files to prioritize.",
     )
+    parser.add_argument(
+        "--max-run-seconds",
+        type=float,
+        default=19800.0,
+        help="Maximum run execution duration in seconds before stopping gracefully (default: 5.5h / 19800s).",
+    )
     return parser.parse_args()
 
 
@@ -928,6 +979,12 @@ if __name__ == "__main__":
     config = PipelineConfig(
         priority_file=args.priority_file,
         priority_inputs_dir=args.priority_inputs,
+        max_run_seconds=args.max_run_seconds,
     )
+    pipeline_container: List[Optional[MacronCorpusPipeline]] = [None]
+    setup_signal_handlers(pipeline_container)
+
     pipeline = MacronCorpusPipeline(config=config)
+    pipeline_container[0] = pipeline
     asyncio.run(pipeline.run())
+    

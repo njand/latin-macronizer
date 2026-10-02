@@ -41,12 +41,14 @@ jobs:
           python scripts/gemini.py
 
       - name: Commit & Push Progress Checkpoints (Runner Repo)
+        if: always()
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update macronization state checkpoint"
           file_pattern: "data/"
 
       - name: Commit & Push Processed Texts (Output Repo)
+        if: always()
         run: |
           cd output_repo
           git config user.name "github-actions[bot]"
@@ -54,4 +56,3 @@ jobs:
           git add .
           git status
           git diff-index --quiet HEAD || (git commit -m "Automated daily corpus update" && git push)
-          

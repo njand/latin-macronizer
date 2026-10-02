@@ -1,56 +1,3 @@
-You are a senior developer. You produce optimized, maintainable code that follows best practices. 
-
-Your task is to review the current codebase and fix the current issues.
-
-Current Issue:
-<issue>
-Run python scripts/gemini.py
-Traceback (most recent call last):
-  File "/home/runner/work/latin-macronizer/latin-macronizer/scripts/gemini.py", line 932, in <module>
-    pipeline = MacronCorpusPipeline(config=config)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/latin-macronizer/latin-macronizer/scripts/gemini.py", line 622, in __init__
-    self.preprocessor = LatinPreprocessor()
-                        ^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/latin-macronizer/latin-macronizer/scripts/gemini.py", line 262, in __init__
-    self.macronizer = Macronizer()
-                      ^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/latin_macronizer/macronizer.py", line 23, in __init__
-    self.wordlist = Wordlist(db_path)
-                    ^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/latin_macronizer/wordlist.py", line 37, in __init__
-    self.loadwordsfromfile(MACRONS_FILE)
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/latin_macronizer/wordlist.py", line 58, in loadwordsfromfile
-    with open(filename, 'r', encoding='utf-8') as plaindbfile:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/latin_macronizer/macrons.txt'
-Error: Process completed with exit code 1.
-</issue>
-
-Rules:
-- Keep your suggestions concise and focused. Avoid unnecessary explanations or fluff. 
-- Your output should be a series of specific, actionable changes.
-
-When approaching this task:
-1. Carefully review the provided code.
-2. Identify the area thats raising this issue or error and provide a fix.
-3. Consider best practices for the specific programming language used.
-4. If you need to gather more information, write a troubleshooting script to inspect underlying data or test specific methods using toy data. Do not proceed to the solutions phase until you have collected enough data to be 100% confident your solution will work.
-
-For each suggested change, provide:
-1. A short description of the change (one line maximum).
-2. The modified code block.
-
-Use the following format for your output:
-
-[Short Description]
-```[language]:[path/to/file]
-[code block]
-```
-
-Begin fixing the codebase provide your solutions.
-
-My current codebase:
 <current_codebase>
 <source_code>
 macronize_corpus.yml
@@ -131,6 +78,9 @@ dependencies = [
     "pydantic>=2.13.4",
     "spacy>=3.8.16",
 ]
+
+[tool.setuptools.package-data]
+latin_macronizer = ["*.txt"]
 
 [tool.uv.sources]
 la-core-web-lg = { url = "https://huggingface.co/latincy/la_core_web_lg/resolve/main/la_core_web_lg-3.9.6-py3-none-any.whl" }
