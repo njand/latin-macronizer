@@ -1,0 +1,17 @@
+{
+  "model_usage": {
+    "gemini-3.5-flash-lite": {
+      "daily_requests": 46,
+      "last_request_date": "2026-10-02"
+    }
+  },
+  "file_progress": {
+    "vergil/aen1.txt": 33
+  },
+  "completed_files": [
+    "vergil/aen1.txt"
+  ],
+  "daily_bytes_processed": {
+    "2026-10-02": 47886
+  }
+}
