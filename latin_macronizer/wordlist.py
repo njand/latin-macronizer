@@ -100,12 +100,13 @@ class Wordlist:
 
     def addwordparse(self, wordform, morphtag, lemma, accented):
         if accented is None:
-            self.unknownwords.add(wordform)
+            if wordform not in {"que", "ne", "ve", "st"}:
+                self.unknownwords.add(wordform)
         else:
+            accented = accented.replace('_^', '').replace('^', '')
             self.formtolemmas[wordform].append(lemma)
             self.formtoaccenteds[wordform].append(accented.lower())
             self.formtotaglemmaaccents[wordform].append((morphtag, lemma, accented))
-    # enddef
 
     def crunchwords(self, words):
         morphinpfd, morphinpfname = mkstemp()
