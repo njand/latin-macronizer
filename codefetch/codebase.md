@@ -13,8 +13,11 @@ Processing ./.
   Getting requirements to build wheel: finished with status 'done'
   Preparing metadata (pyproject.toml): started
   Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting google-genai>=2.20.0 (from latin-macronizer==0.1.0)
+  Downloading google_genai-2.28.0-py3-none-any.whl.metadata (56 kB)
 INFO: pip is looking at multiple versions of latin-macronizer to determine which version is compatible with other requirements. This could take a while.
-ERROR: Package 'latin-macronizer' requires a different Python: 3.11.16 not in '>=3.13'
+ERROR: Could not find a version that satisfies the requirement la-core-web-lg (from latin-macronizer) (from versions: none)
+ERROR: No matching distribution found for la-core-web-lg
 Error: Process completed with exit code 1.
 </issue>
 
@@ -115,7 +118,7 @@ name = "latin-macronizer"
 version = "0.1.0"
 description = "Mark long vowels in Latin text"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.11"
 dependencies = [
     "google-genai>=2.20.0",
     "la-core-web-lg",
