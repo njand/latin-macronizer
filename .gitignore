@@ -4,4 +4,5 @@ latin_macronizer/treebank_data
 latin_macronizer/__pycache__
 codefetch.config.mjs
 .codefetchignore
+codefetch/
 .venv/
