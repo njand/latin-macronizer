@@ -4,20 +4,11 @@ Your task is to review the current codebase and fix the current issues.
 
 Current Issue:
 <issue>
-Run python -m pip install --upgrade pip
-Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages (26.2.1)
-Processing ./.
-  Installing build dependencies: started
-  Installing build dependencies: finished with status 'done'
-  Getting requirements to build wheel: started
-  Getting requirements to build wheel: finished with status 'done'
-  Preparing metadata (pyproject.toml): started
-  Preparing metadata (pyproject.toml): finished with status 'done'
-Collecting google-genai>=2.20.0 (from latin-macronizer==0.1.0)
-  Downloading google_genai-2.28.0-py3-none-any.whl.metadata (56 kB)
-INFO: pip is looking at multiple versions of latin-macronizer to determine which version is compatible with other requirements. This could take a while.
-ERROR: Could not find a version that satisfies the requirement la-core-web-lg (from latin-macronizer) (from versions: none)
-ERROR: No matching distribution found for la-core-web-lg
+Run python scripts/gemini.py
+  File "/home/runner/work/latin-macronizer/latin-macronizer/scripts/gemini.py", line 231
+    text = re.sub(r"(?<!\\)\[", r"\[", text)         text = re.sub(r"(?<!\\)\]", r"\]", text)
+                                                     ^^^^
+SyntaxError: invalid syntax
 Error: Process completed with exit code 1.
 </issue>
 
@@ -121,14 +112,10 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "google-genai>=2.20.0",
-    "la-core-web-lg",
+    "la-core-web-lg @ https://huggingface.co/latincy/la_core_web_lg/resolve/main/la_core_web_lg-3.9.6-py3-none-any.whl",
     "pydantic>=2.13.4",
     "spacy>=3.8.16",
 ]
-
-# Explicitly declare targets if automatic discovery doesn't pick it up
-[tool.hatch.build.targets.wheel]
-packages = ["src/latin_macronizer"]
 
 [tool.uv.sources]
 la-core-web-lg = { url = "https://huggingface.co/latincy/la_core_web_lg/resolve/main/la_core_web_lg-3.9.6-py3-none-any.whl" }

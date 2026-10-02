@@ -228,7 +228,8 @@ class TextEscaper:
 
     @classmethod
     def escape_raw_brackets(cls, text: str) -> str:
-        text = re.sub(r"(?<!\\)\[", r"\[", text)         text = re.sub(r"(?<!\\)\]", r"\]", text)
+        text = re.sub(r"(?<!\\)\[", r"\[", text)
+        text = re.sub(r"(?<!\\)\]", r"\]", text)
         text = re.sub(r"(?<!\\)<", r"\<", text)
         text = re.sub(r"(?<!\\)>", r"\>", text)
         return text
@@ -237,7 +238,8 @@ class TextEscaper:
     def mask(cls, text: str) -> str:
         text = text.replace(r"\<", cls.MASK_LANGLE)
         text = text.replace(r"\>", cls.MASK_RANGLE)
-        text = text.replace(r"\[", cls.MASK_LBRACKET)         text = text.replace(r"\]", cls.MASK_RBRACKET)
+        text = text.replace(r"\[", cls.MASK_LBRACKET)
+        text = text.replace(r"\]", cls.MASK_RBRACKET)
         return text
 
     @classmethod
