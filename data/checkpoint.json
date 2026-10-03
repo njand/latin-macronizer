@@ -5,7 +5,7 @@
       "last_request_date": "2026-10-03"
     },
     "gemini-3.1-flash-lite": {
-      "daily_requests": 349,
+      "daily_requests": 449,
       "last_request_date": "2026-10-03"
     }
   },
@@ -26,7 +26,8 @@
     "1644.txt": 23,
     "abbofloracensis.txt": 22,
     "abelard/dialogus.txt": 170,
-    "abelard/epistola.txt": 16
+    "abelard/epistola.txt": 16,
+    "abelard/historia.txt": 48
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -49,6 +50,6 @@
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
-    "2026-10-03": 711396
+    "2026-10-03": 780721
   }
 }
