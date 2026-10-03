@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 428,
+      "daily_requests": 467,
       "last_request_date": "2026-10-03"
     }
   },
@@ -19,7 +19,8 @@
     "vergil/aen8.txt": 33,
     "vergil/aen9.txt": 38,
     "12tables.txt": 5,
-    "1644.txt": 23
+    "1644.txt": 23,
+    "abbofloracensis.txt": 22
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -35,10 +36,11 @@
     "vergil/aen8.txt",
     "vergil/aen9.txt",
     "12tables.txt",
-    "1644.txt"
+    "1644.txt",
+    "abbofloracensis.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
-    "2026-10-03": 392230
+    "2026-10-03": 437360
   }
 }
