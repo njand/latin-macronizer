@@ -1,8 +1,8 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 475,
-      "last_request_date": "2026-10-03"
+      "daily_requests": 33,
+      "last_request_date": "2026-10-04"
     },
     "gemini-3.1-flash-lite": {
       "daily_requests": 449,
@@ -27,7 +27,7 @@
     "abbofloracensis.txt": 22,
     "abelard/dialogus.txt": 170,
     "abelard/epistola.txt": 16,
-    "abelard/historia.txt": 48
+    "abelard/historia.txt": 72
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -46,10 +46,12 @@
     "1644.txt",
     "abbofloracensis.txt",
     "abelard/dialogus.txt",
-    "abelard/epistola.txt"
+    "abelard/epistola.txt",
+    "abelard/historia.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
-    "2026-10-03": 780721
+    "2026-10-03": 780721,
+    "2026-10-04": 40923
   }
 }
