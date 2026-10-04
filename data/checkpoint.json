@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 65,
+      "daily_requests": 76,
       "last_request_date": "2026-10-04"
     },
     "gemini-3.1-flash-lite": {
@@ -32,7 +32,8 @@
     "addison/burnett.txt": 2,
     "addison/hannes.txt": 1,
     "addison/machinae.txt": 4,
-    "addison/pax.txt": 8
+    "addison/pax.txt": 8,
+    "addison/praelium.txt": 7
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -57,11 +58,12 @@
     "addison/burnett.txt",
     "addison/hannes.txt",
     "addison/machinae.txt",
-    "addison/pax.txt"
+    "addison/pax.txt",
+    "addison/praelium.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
     "2026-10-03": 780721,
-    "2026-10-04": 66367
+    "2026-10-04": 76606
   }
 }
