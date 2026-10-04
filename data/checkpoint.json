@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 36,
+      "daily_requests": 42,
       "last_request_date": "2026-10-04"
     },
     "gemini-3.1-flash-lite": {
@@ -28,7 +28,8 @@
     "abelard/dialogus.txt": 170,
     "abelard/epistola.txt": 16,
     "abelard/historia.txt": 72,
-    "addison/barometri.txt": 2
+    "addison/barometri.txt": 2,
+    "addison/burnett.txt": 2
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -49,11 +50,12 @@
     "abelard/dialogus.txt",
     "abelard/epistola.txt",
     "abelard/historia.txt",
-    "addison/barometri.txt"
+    "addison/barometri.txt",
+    "addison/burnett.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
     "2026-10-03": 780721,
-    "2026-10-04": 44921
+    "2026-10-04": 47378
   }
 }
