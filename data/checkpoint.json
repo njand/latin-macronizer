@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 104,
+      "daily_requests": 202,
       "last_request_date": "2026-10-04"
     },
     "gemini-3.1-flash-lite": {
@@ -37,7 +37,8 @@
     "addison/preface.txt": 3,
     "addison/resurr.txt": 5,
     "addison/sphaer.txt": 2,
-    "adso.txt": 5
+    "adso.txt": 5,
+    "aelredus.txt": 65
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -67,11 +68,12 @@
     "addison/preface.txt",
     "addison/resurr.txt",
     "addison/sphaer.txt",
-    "adso.txt"
+    "adso.txt",
+    "aelredus.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
     "2026-10-03": 780721,
-    "2026-10-04": 109903
+    "2026-10-04": 266497
   }
 }
