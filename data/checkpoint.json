@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 344,
+      "daily_requests": 353,
       "last_request_date": "2026-10-05"
     },
     "gemini-3.1-flash-lite": {
@@ -46,7 +46,8 @@
     "albertanus/albertanus.liberconsol.txt": 2,
     "albertanus/albertanus.sermo.txt": 2,
     "albertanus/albertanus.sermo1.txt": 2,
-    "albertanus/albertanus.sermo2.txt": 2
+    "albertanus/albertanus.sermo2.txt": 2,
+    "albertanus/albertanus.sermo3.txt": 2
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -85,12 +86,13 @@
     "albertanus/albertanus.liberconsol.txt",
     "albertanus/albertanus.sermo.txt",
     "albertanus/albertanus.sermo1.txt",
-    "albertanus/albertanus.sermo2.txt"
+    "albertanus/albertanus.sermo2.txt",
+    "albertanus/albertanus.sermo3.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
     "2026-10-03": 780721,
     "2026-10-04": 717148,
-    "2026-10-05": 427892
+    "2026-10-05": 459715
   }
 }
