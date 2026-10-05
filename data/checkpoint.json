@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 174,
+      "daily_requests": 308,
       "last_request_date": "2026-10-05"
     },
     "gemini-3.1-flash-lite": {
@@ -41,7 +41,8 @@
     "aelredus.txt": 65,
     "agnes.txt": 79,
     "alanus/alanus1.txt": 81,
-    "alanus/alanus2.txt": 274
+    "alanus/alanus2.txt": 274,
+    "albertanus/albertanus.arsloquendi.txt": 51
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -75,12 +76,13 @@
     "aelredus.txt",
     "agnes.txt",
     "alanus/alanus1.txt",
-    "alanus/alanus2.txt"
+    "alanus/alanus2.txt",
+    "albertanus/albertanus.arsloquendi.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
     "2026-10-03": 780721,
     "2026-10-04": 717148,
-    "2026-10-05": 112098
+    "2026-10-05": 167289
   }
 }
