@@ -21,7 +21,7 @@
       "last_request_date": "2026-10-05"
     },
     "gemini-3.5-flash": {
-      "daily_requests": 6,
+      "daily_requests": 19,
       "last_request_date": "2026-10-05"
     }
   },
@@ -71,7 +71,8 @@
     "albertanus/albertanus4.txt": 2,
     "albertofaix/hist1.txt": 52,
     "albertofaix/hist10.txt": 82,
-    "albertofaix/hist11.txt": 68
+    "albertofaix/hist11.txt": 68,
+    "albertofaix/hist12.txt": 3
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -125,6 +126,6 @@
     "2026-10-02": 275210,
     "2026-10-03": 780721,
     "2026-10-04": 717148,
-    "2026-10-05": 1065000
+    "2026-10-05": 1068680
   }
 }
