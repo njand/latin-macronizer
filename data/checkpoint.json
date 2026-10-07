@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 322,
+      "daily_requests": 448,
       "last_request_date": "2026-10-07"
     },
     "gemini-3.1-flash-lite": {
@@ -78,7 +78,8 @@
     "albertofaix/hist4.txt": 107,
     "albertofaix/hist5.txt": 86,
     "albertofaix/hist6.txt": 95,
-    "albertofaix/hist7.txt": 120
+    "albertofaix/hist7.txt": 120,
+    "albertofaix/hist8.txt": 73
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -133,7 +134,8 @@
     "albertofaix/hist4.txt",
     "albertofaix/hist5.txt",
     "albertofaix/hist6.txt",
-    "albertofaix/hist7.txt"
+    "albertofaix/hist7.txt",
+    "albertofaix/hist8.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -141,6 +143,6 @@
     "2026-10-04": 717148,
     "2026-10-05": 1068680,
     "2026-10-06": 566959,
-    "2026-10-07": 260222
+    "2026-10-07": 339276
   }
 }
