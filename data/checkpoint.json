@@ -5,7 +5,7 @@
       "last_request_date": "2026-10-07"
     },
     "gemini-3.1-flash-lite": {
-      "daily_requests": 321,
+      "daily_requests": 415,
       "last_request_date": "2026-10-07"
     },
     "gemini-3.8-flash": {
@@ -89,7 +89,8 @@
     "alcuin/rec.txt": 0,
     "alcuin/rhetorica.txt": 48,
     "alcuin/sequentia.txt": 1,
-    "alcuin/versus.txt": 2
+    "alcuin/versus.txt": 2,
+    "alfonsi.disciplina.txt": 36
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -163,6 +164,6 @@
     "2026-10-04": 717148,
     "2026-10-05": 1068680,
     "2026-10-06": 566959,
-    "2026-10-07": 580702
+    "2026-10-07": 623208
   }
 }
