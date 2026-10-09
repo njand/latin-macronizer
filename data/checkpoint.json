@@ -1,8 +1,8 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 378,
-      "last_request_date": "2026-10-08"
+      "daily_requests": 73,
+      "last_request_date": "2026-10-09"
     },
     "gemini-3.1-flash-lite": {
       "daily_requests": 415,
@@ -92,7 +92,7 @@
     "alcuin/versus.txt": 2,
     "alfonsi.disciplina.txt": 95,
     "ambrose/epist.txt": 15,
-    "ambrose/epistvaria.txt": 152
+    "ambrose/epistvaria.txt": 207
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -160,7 +160,8 @@
     "alcuin/sequentia.txt",
     "alcuin/versus.txt",
     "alfonsi.disciplina.txt",
-    "ambrose/epist.txt"
+    "ambrose/epist.txt",
+    "ambrose/epistvaria.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -169,6 +170,7 @@
     "2026-10-05": 1068680,
     "2026-10-06": 566959,
     "2026-10-07": 623208,
-    "2026-10-08": 313907
+    "2026-10-08": 313907,
+    "2026-10-09": 76789
   }
 }
