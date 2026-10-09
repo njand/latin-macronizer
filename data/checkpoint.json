@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 164,
+      "daily_requests": 191,
       "last_request_date": "2026-10-09"
     },
     "gemini-3.1-flash-lite": {
@@ -94,7 +94,8 @@
     "ambrose/epist.txt": 15,
     "ambrose/epistvaria.txt": 207,
     "ambrose/hymns.txt": 8,
-    "ambrose/mysteriis.txt": 43
+    "ambrose/mysteriis.txt": 43,
+    "ammianus/14.txt": 12
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -165,7 +166,8 @@
     "ambrose/epist.txt",
     "ambrose/epistvaria.txt",
     "ambrose/hymns.txt",
-    "ambrose/mysteriis.txt"
+    "ambrose/mysteriis.txt",
+    "ammianus/14.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -175,6 +177,6 @@
     "2026-10-06": 566959,
     "2026-10-07": 623208,
     "2026-10-08": 313907,
-    "2026-10-09": 132886
+    "2026-10-09": 215295
   }
 }
