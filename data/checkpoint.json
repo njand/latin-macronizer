@@ -1,8 +1,8 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 475,
-      "last_request_date": "2026-10-09"
+      "daily_requests": 69,
+      "last_request_date": "2026-10-10"
     },
     "gemini-3.1-flash-lite": {
       "daily_requests": 454,
@@ -105,7 +105,8 @@
     "ammianus/21.txt": 47,
     "ammianus/22.txt": 63,
     "ammianus/23.txt": 51,
-    "ammianus/24.txt": 43
+    "ammianus/24.txt": 43,
+    "ammianus/25.txt": 44
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -187,7 +188,8 @@
     "ammianus/21.txt",
     "ammianus/22.txt",
     "ammianus/23.txt",
-    "ammianus/24.txt"
+    "ammianus/24.txt",
+    "ammianus/25.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -197,6 +199,7 @@
     "2026-10-06": 566959,
     "2026-10-07": 623208,
     "2026-10-08": 313907,
-    "2026-10-09": 875533
+    "2026-10-09": 875533,
+    "2026-10-10": 67347
   }
 }
