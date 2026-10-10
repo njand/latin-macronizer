@@ -5,7 +5,7 @@
       "last_request_date": "2026-10-10"
     },
     "gemini-3.1-flash-lite": {
-      "daily_requests": 266,
+      "daily_requests": 273,
       "last_request_date": "2026-10-10"
     },
     "gemini-3.8-flash": {
@@ -116,7 +116,8 @@
     "ampelius.txt": 41,
     "andecavis.txt": 1,
     "andreasbergoma.txt": 19,
-    "andronicus.txt": 4
+    "andronicus.txt": 4,
+    "angilbert.txt": 2
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -209,7 +210,8 @@
     "ampelius.txt",
     "andecavis.txt",
     "andreasbergoma.txt",
-    "andronicus.txt"
+    "andronicus.txt",
+    "angilbert.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -220,6 +222,6 @@
     "2026-10-07": 623208,
     "2026-10-08": 313907,
     "2026-10-09": 875533,
-    "2026-10-10": 614707
+    "2026-10-10": 617715
   }
 }
