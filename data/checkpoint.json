@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 290,
+      "daily_requests": 318,
       "last_request_date": "2026-10-11"
     },
     "gemini-3.1-flash-lite": {
@@ -120,7 +120,8 @@
     "angilbert.txt": 2,
     "annalesregnifrancorum.txt": 203,
     "annalesvedastini.txt": 68,
-    "anon.deramis.txt": 2
+    "anon.deramis.txt": 2,
+    "anon.martyrio.txt": 23
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -217,7 +218,8 @@
     "angilbert.txt",
     "annalesregnifrancorum.txt",
     "annalesvedastini.txt",
-    "anon.deramis.txt"
+    "anon.deramis.txt",
+    "anon.martyrio.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -229,6 +231,6 @@
     "2026-10-08": 313907,
     "2026-10-09": 875533,
     "2026-10-10": 724697,
-    "2026-10-11": 172455
+    "2026-10-11": 199336
   }
 }
