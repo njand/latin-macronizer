@@ -1,12 +1,12 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 423,
+      "daily_requests": 475,
       "last_request_date": "2026-10-11"
     },
     "gemini-3.1-flash-lite": {
-      "daily_requests": 465,
-      "last_request_date": "2026-10-10"
+      "daily_requests": 22,
+      "last_request_date": "2026-10-11"
     },
     "gemini-3.8-flash": {
       "daily_requests": 19,
@@ -123,7 +123,8 @@
     "anon.deramis.txt": 2,
     "anon.martyrio.txt": 23,
     "anon.nev.txt": 67,
-    "anselmepistula.txt": 4
+    "anselmepistula.txt": 4,
+    "anselmproslogion.txt": 51
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -223,7 +224,8 @@
     "anon.deramis.txt",
     "anon.martyrio.txt",
     "anon.nev.txt",
-    "anselmepistula.txt"
+    "anselmepistula.txt",
+    "anselmproslogion.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -235,6 +237,6 @@
     "2026-10-08": 313907,
     "2026-10-09": 875533,
     "2026-10-10": 724697,
-    "2026-10-11": 269106
+    "2026-10-11": 323098
   }
 }
