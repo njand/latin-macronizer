@@ -5,7 +5,7 @@
       "last_request_date": "2026-10-11"
     },
     "gemini-3.1-flash-lite": {
-      "daily_requests": 48,
+      "daily_requests": 65,
       "last_request_date": "2026-10-11"
     },
     "gemini-3.8-flash": {
@@ -125,7 +125,8 @@
     "anon.nev.txt": 67,
     "anselmepistula.txt": 4,
     "anselmproslogion.txt": 51,
-    "apicius/apicius1.txt": 11
+    "apicius/apicius1.txt": 11,
+    "apicius/apicius2.txt": 7
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -227,7 +228,8 @@
     "anon.nev.txt",
     "anselmepistula.txt",
     "anselmproslogion.txt",
-    "apicius/apicius1.txt"
+    "apicius/apicius1.txt",
+    "apicius/apicius2.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -239,6 +241,6 @@
     "2026-10-08": 313907,
     "2026-10-09": 875533,
     "2026-10-10": 724697,
-    "2026-10-11": 334953
+    "2026-10-11": 343052
   }
 }
