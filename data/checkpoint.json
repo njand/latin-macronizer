@@ -5,7 +5,7 @@
       "last_request_date": "2026-10-11"
     },
     "gemini-3.1-flash-lite": {
-      "daily_requests": 176,
+      "daily_requests": 224,
       "last_request_date": "2026-10-11"
     },
     "gemini-3.8-flash": {
@@ -129,7 +129,8 @@
     "apicius/apicius2.txt": 7,
     "apicius/apicius3.txt": 11,
     "apicius/apicius4.txt": 28,
-    "apicius/apicius5.txt": 10
+    "apicius/apicius5.txt": 10,
+    "appverg.aetna.txt": 34
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -235,7 +236,8 @@
     "apicius/apicius2.txt",
     "apicius/apicius3.txt",
     "apicius/apicius4.txt",
-    "apicius/apicius5.txt"
+    "apicius/apicius5.txt",
+    "appverg.aetna.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -247,6 +249,6 @@
     "2026-10-08": 313907,
     "2026-10-09": 875533,
     "2026-10-10": 724697,
-    "2026-10-11": 394681
+    "2026-10-11": 436817
   }
 }
