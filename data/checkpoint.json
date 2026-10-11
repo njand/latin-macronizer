@@ -5,7 +5,7 @@
       "last_request_date": "2026-10-11"
     },
     "gemini-3.1-flash-lite": {
-      "daily_requests": 283,
+      "daily_requests": 435,
       "last_request_date": "2026-10-11"
     },
     "gemini-3.8-flash": {
@@ -132,7 +132,8 @@
     "apicius/apicius5.txt": 10,
     "appverg.aetna.txt": 34,
     "appverg.catalepton.txt": 11,
-    "appverg.ciris.txt": 26
+    "appverg.ciris.txt": 26,
+    "appvergcomp.txt": 107
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -253,6 +254,6 @@
     "2026-10-08": 313907,
     "2026-10-09": 875533,
     "2026-10-10": 724697,
-    "2026-10-11": 484395
+    "2026-10-11": 615903
   }
 }
