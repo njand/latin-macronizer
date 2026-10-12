@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 68,
+      "daily_requests": 466,
       "last_request_date": "2026-10-12"
     },
     "gemini-3.1-flash-lite": {
@@ -134,7 +134,8 @@
     "appverg.catalepton.txt": 11,
     "appverg.ciris.txt": 26,
     "appvergcomp.txt": 130,
-    "appvergculex.txt": 22
+    "appvergculex.txt": 22,
+    "apuleius/apuleius.apol.txt": 176
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -245,7 +246,8 @@
     "appverg.catalepton.txt",
     "appverg.ciris.txt",
     "appvergcomp.txt",
-    "appvergculex.txt"
+    "appvergculex.txt",
+    "apuleius/apuleius.apol.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -258,6 +260,6 @@
     "2026-10-09": 875533,
     "2026-10-10": 724697,
     "2026-10-11": 615903,
-    "2026-10-12": 53460
+    "2026-10-12": 266078
   }
 }
