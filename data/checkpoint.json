@@ -5,7 +5,7 @@
       "last_request_date": "2026-10-12"
     },
     "gemini-3.1-flash-lite": {
-      "daily_requests": 127,
+      "daily_requests": 190,
       "last_request_date": "2026-10-12"
     },
     "gemini-3.8-flash": {
@@ -137,7 +137,8 @@
     "appvergculex.txt": 22,
     "apuleius/apuleius.apol.txt": 176,
     "apuleius/apuleius.cupid.txt": 62,
-    "apuleius/apuleius.deosocratis.txt": 24
+    "apuleius/apuleius.deosocratis.txt": 24,
+    "apuleius/apuleius.dog1.txt": 22
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -251,7 +252,8 @@
     "appvergculex.txt",
     "apuleius/apuleius.apol.txt",
     "apuleius/apuleius.cupid.txt",
-    "apuleius/apuleius.deosocratis.txt"
+    "apuleius/apuleius.deosocratis.txt",
+    "apuleius/apuleius.dog1.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -264,6 +266,6 @@
     "2026-10-09": 875533,
     "2026-10-10": 724697,
     "2026-10-11": 615903,
-    "2026-10-12": 399081
+    "2026-10-12": 433565
   }
 }
