@@ -1,8 +1,8 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 475,
-      "last_request_date": "2026-10-11"
+      "daily_requests": 31,
+      "last_request_date": "2026-10-12"
     },
     "gemini-3.1-flash-lite": {
       "daily_requests": 435,
@@ -133,7 +133,7 @@
     "appverg.aetna.txt": 34,
     "appverg.catalepton.txt": 11,
     "appverg.ciris.txt": 26,
-    "appvergcomp.txt": 107
+    "appvergcomp.txt": 130
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -242,7 +242,8 @@
     "apicius/apicius5.txt",
     "appverg.aetna.txt",
     "appverg.catalepton.txt",
-    "appverg.ciris.txt"
+    "appverg.ciris.txt",
+    "appvergcomp.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -254,6 +255,7 @@
     "2026-10-08": 313907,
     "2026-10-09": 875533,
     "2026-10-10": 724697,
-    "2026-10-11": 615903
+    "2026-10-11": 615903,
+    "2026-10-12": 26614
   }
 }
