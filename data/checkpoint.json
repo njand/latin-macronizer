@@ -1,12 +1,12 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 466,
+      "daily_requests": 475,
       "last_request_date": "2026-10-12"
     },
     "gemini-3.1-flash-lite": {
-      "daily_requests": 435,
-      "last_request_date": "2026-10-11"
+      "daily_requests": 74,
+      "last_request_date": "2026-10-12"
     },
     "gemini-3.8-flash": {
       "daily_requests": 19,
@@ -135,7 +135,8 @@
     "appverg.ciris.txt": 26,
     "appvergcomp.txt": 130,
     "appvergculex.txt": 22,
-    "apuleius/apuleius.apol.txt": 176
+    "apuleius/apuleius.apol.txt": 176,
+    "apuleius/apuleius.cupid.txt": 62
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -247,7 +248,8 @@
     "appverg.ciris.txt",
     "appvergcomp.txt",
     "appvergculex.txt",
-    "apuleius/apuleius.apol.txt"
+    "apuleius/apuleius.apol.txt",
+    "apuleius/apuleius.cupid.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -260,6 +262,6 @@
     "2026-10-09": 875533,
     "2026-10-10": 724697,
     "2026-10-11": 615903,
-    "2026-10-12": 266078
+    "2026-10-12": 354113
   }
 }
