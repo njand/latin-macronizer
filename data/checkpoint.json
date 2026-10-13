@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 211,
+      "daily_requests": 266,
       "last_request_date": "2026-10-13"
     },
     "gemini-3.1-flash-lite": {
@@ -142,7 +142,8 @@
     "apuleius/apuleius.dog2.txt": 28,
     "apuleius/apuleius.florida.txt": 21,
     "apuleius/apuleius.mundo.txt": 41,
-    "apuleius/apuleius1.txt": 24
+    "apuleius/apuleius1.txt": 24,
+    "apuleius/apuleius10.txt": 38
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -261,7 +262,8 @@
     "apuleius/apuleius.dog2.txt",
     "apuleius/apuleius.florida.txt",
     "apuleius/apuleius.mundo.txt",
-    "apuleius/apuleius1.txt"
+    "apuleius/apuleius1.txt",
+    "apuleius/apuleius10.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -275,6 +277,6 @@
     "2026-10-10": 724697,
     "2026-10-11": 615903,
     "2026-10-12": 485778,
-    "2026-10-13": 177392
+    "2026-10-13": 235280
   }
 }
