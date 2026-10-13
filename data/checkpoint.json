@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 354,
+      "daily_requests": 386,
       "last_request_date": "2026-10-13"
     },
     "gemini-3.1-flash-lite": {
@@ -145,7 +145,8 @@
     "apuleius/apuleius1.txt": 24,
     "apuleius/apuleius10.txt": 38,
     "apuleius/apuleius11.txt": 27,
-    "apuleius/apuleius2.txt": 31
+    "apuleius/apuleius2.txt": 31,
+    "apuleius/apuleius3.txt": 25
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -267,7 +268,8 @@
     "apuleius/apuleius1.txt",
     "apuleius/apuleius10.txt",
     "apuleius/apuleius11.txt",
-    "apuleius/apuleius2.txt"
+    "apuleius/apuleius2.txt",
+    "apuleius/apuleius3.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -281,6 +283,6 @@
     "2026-10-10": 724697,
     "2026-10-11": 615903,
     "2026-10-12": 485778,
-    "2026-10-13": 331761
+    "2026-10-13": 371284
   }
 }
