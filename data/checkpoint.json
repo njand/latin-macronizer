@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 274,
+      "daily_requests": 281,
       "last_request_date": "2026-10-14"
     },
     "gemini-3.1-flash-lite": {
@@ -156,7 +156,8 @@
     "aquinas/corpuschristi.txt": 0,
     "aquinas/ente.txt": 14,
     "aquinas/epist.txt": 2,
-    "aquinas/expositio.txt": 14
+    "aquinas/expositio.txt": 14,
+    "aquinas/p1.txt": 5
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -289,7 +290,8 @@
     "aquinas/corpuschristi.txt",
     "aquinas/ente.txt",
     "aquinas/epist.txt",
-    "aquinas/expositio.txt"
+    "aquinas/expositio.txt",
+    "aquinas/p1.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -304,6 +306,6 @@
     "2026-10-11": 615903,
     "2026-10-12": 485778,
     "2026-10-13": 422833,
-    "2026-10-14": 372523
+    "2026-10-14": 378351
   }
 }
