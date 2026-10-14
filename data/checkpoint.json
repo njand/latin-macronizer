@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 289,
+      "daily_requests": 331,
       "last_request_date": "2026-10-14"
     },
     "gemini-3.1-flash-lite": {
@@ -159,7 +159,8 @@
     "aquinas/expositio.txt": 14,
     "aquinas/p1.txt": 5,
     "aquinas/princ.txt": 2,
-    "aquinas/prologus.txt": 1
+    "aquinas/prologus.txt": 1,
+    "aquinas/q1.1.txt": 34
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -295,7 +296,8 @@
     "aquinas/expositio.txt",
     "aquinas/p1.txt",
     "aquinas/princ.txt",
-    "aquinas/prologus.txt"
+    "aquinas/prologus.txt",
+    "aquinas/q1.1.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -310,6 +312,6 @@
     "2026-10-11": 615903,
     "2026-10-12": 485778,
     "2026-10-13": 422833,
-    "2026-10-14": 394896
+    "2026-10-14": 440353
   }
 }
