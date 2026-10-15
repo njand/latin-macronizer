@@ -5,7 +5,7 @@
       "last_request_date": "2026-10-15"
     },
     "gemini-3.1-flash-lite": {
-      "daily_requests": 265,
+      "daily_requests": 307,
       "last_request_date": "2026-10-15"
     },
     "gemini-3.8-flash": {
@@ -188,7 +188,8 @@
     "aquinas/q1.32.txt": 19,
     "aquinas/q1.33.txt": 16,
     "aquinas/q1.34.txt": 16,
-    "aquinas/q1.35.txt": 5
+    "aquinas/q1.35.txt": 5,
+    "aquinas/q1.36.txt": 25
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -353,7 +354,8 @@
     "aquinas/q1.32.txt",
     "aquinas/q1.33.txt",
     "aquinas/q1.34.txt",
-    "aquinas/q1.35.txt"
+    "aquinas/q1.35.txt",
+    "aquinas/q1.36.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -369,6 +371,6 @@
     "2026-10-12": 485778,
     "2026-10-13": 422833,
     "2026-10-14": 731694,
-    "2026-10-15": 625015
+    "2026-10-15": 662151
   }
 }
