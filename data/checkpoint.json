@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 108,
+      "daily_requests": 140,
       "last_request_date": "2026-10-17"
     },
     "gemini-3.1-flash-lite": {
@@ -203,7 +203,8 @@
     "aquinas/q1.46.txt": 19,
     "aquinas/q1.47.txt": 11,
     "aquinas/q1.48.txt": 30,
-    "aquinas/q1.49.txt": 19
+    "aquinas/q1.49.txt": 19,
+    "aquinas/q1.5.txt": 25
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -383,7 +384,8 @@
     "aquinas/q1.46.txt",
     "aquinas/q1.47.txt",
     "aquinas/q1.48.txt",
-    "aquinas/q1.49.txt"
+    "aquinas/q1.49.txt",
+    "aquinas/q1.5.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -401,6 +403,6 @@
     "2026-10-14": 731694,
     "2026-10-15": 690008,
     "2026-10-16": 292839,
-    "2026-10-17": 96728
+    "2026-10-17": 125678
   }
 }
