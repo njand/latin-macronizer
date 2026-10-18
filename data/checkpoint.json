@@ -5,7 +5,7 @@
       "last_request_date": "2026-10-18"
     },
     "gemini-3.1-flash-lite": {
-      "daily_requests": 84,
+      "daily_requests": 168,
       "last_request_date": "2026-10-18"
     },
     "gemini-3.8-flash": {
@@ -244,7 +244,8 @@
     "archpoet.txt": 31,
     "arnobius/arnobius1.txt": 62,
     "arnobius/arnobius2.txt": 77,
-    "arnobius/arnobius3.txt": 43
+    "arnobius/arnobius3.txt": 43,
+    "arnobius/arnobius4.txt": 38
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -465,7 +466,8 @@
     "archpoet.txt",
     "arnobius/arnobius1.txt",
     "arnobius/arnobius2.txt",
-    "arnobius/arnobius3.txt"
+    "arnobius/arnobius3.txt",
+    "arnobius/arnobius4.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -484,6 +486,6 @@
     "2026-10-15": 690008,
     "2026-10-16": 292839,
     "2026-10-17": 756222,
-    "2026-10-18": 520205
+    "2026-10-18": 587758
   }
 }
