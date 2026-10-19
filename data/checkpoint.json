@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 254,
+      "daily_requests": 403,
       "last_request_date": "2026-10-19"
     },
     "gemini-3.1-flash-lite": {
@@ -250,7 +250,8 @@
     "arnobius/arnobius6.txt": 26,
     "arnobius/arnobius7.txt": 54,
     "arnulf.txt": 1,
-    "asconius.txt": 109
+    "asconius.txt": 109,
+    "asserius.txt": 82
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -477,7 +478,8 @@
     "arnobius/arnobius6.txt",
     "arnobius/arnobius7.txt",
     "arnulf.txt",
-    "asconius.txt"
+    "asconius.txt",
+    "asserius.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -497,6 +499,6 @@
     "2026-10-16": 292839,
     "2026-10-17": 756222,
     "2026-10-18": 727232,
-    "2026-10-19": 270808
+    "2026-10-19": 389124
   }
 }
