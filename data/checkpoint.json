@@ -5,7 +5,7 @@
       "last_request_date": "2026-10-19"
     },
     "gemini-3.1-flash-lite": {
-      "daily_requests": 139,
+      "daily_requests": 230,
       "last_request_date": "2026-10-19"
     },
     "gemini-3.8-flash": {
@@ -253,7 +253,8 @@
     "asconius.txt": 109,
     "asserius.txt": 82,
     "augustine/catechizandis.txt": 57,
-    "augustine/civ1.txt": 50
+    "augustine/civ1.txt": 50,
+    "augustine/civ10.txt": 51
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -483,7 +484,8 @@
     "asconius.txt",
     "asserius.txt",
     "augustine/catechizandis.txt",
-    "augustine/civ1.txt"
+    "augustine/civ1.txt",
+    "augustine/civ10.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -503,6 +505,6 @@
     "2026-10-16": 292839,
     "2026-10-17": 756222,
     "2026-10-18": 727232,
-    "2026-10-19": 627231
+    "2026-10-19": 759138
   }
 }
