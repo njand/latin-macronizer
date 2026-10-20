@@ -1,8 +1,8 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 475,
-      "last_request_date": "2026-10-19"
+      "daily_requests": 81,
+      "last_request_date": "2026-10-20"
     },
     "gemini-3.1-flash-lite": {
       "daily_requests": 230,
@@ -254,7 +254,8 @@
     "asserius.txt": 82,
     "augustine/catechizandis.txt": 57,
     "augustine/civ1.txt": 50,
-    "augustine/civ10.txt": 51
+    "augustine/civ10.txt": 51,
+    "augustine/civ11.txt": 41
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -485,7 +486,8 @@
     "asserius.txt",
     "augustine/catechizandis.txt",
     "augustine/civ1.txt",
-    "augustine/civ10.txt"
+    "augustine/civ10.txt",
+    "augustine/civ11.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -505,6 +507,7 @@
     "2026-10-16": 292839,
     "2026-10-17": 756222,
     "2026-10-18": 727232,
-    "2026-10-19": 759138
+    "2026-10-19": 759138,
+    "2026-10-20": 107885
   }
 }
