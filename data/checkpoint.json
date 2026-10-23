@@ -1,12 +1,12 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 437,
+      "daily_requests": 475,
       "last_request_date": "2026-10-23"
     },
     "gemini-3.1-flash-lite": {
-      "daily_requests": 74,
-      "last_request_date": "2026-10-21"
+      "daily_requests": 20,
+      "last_request_date": "2026-10-23"
     },
     "gemini-3.8-flash": {
       "daily_requests": 19,
@@ -277,7 +277,8 @@
     "augustine/civ9.txt": 33,
     "augustine/conf1.txt": 32,
     "augustine/conf10.txt": 78,
-    "augustine/conf11.txt": 47
+    "augustine/conf11.txt": 47,
+    "augustine/conf12.txt": 46
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -531,7 +532,8 @@
     "augustine/civ9.txt",
     "augustine/conf1.txt",
     "augustine/conf10.txt",
-    "augustine/conf11.txt"
+    "augustine/conf11.txt",
+    "augustine/conf12.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -555,6 +557,6 @@
     "2026-10-20": 544229,
     "2026-10-21": 717410,
     "2026-10-22": 617094,
-    "2026-10-23": 586163
+    "2026-10-23": 650129
   }
 }
