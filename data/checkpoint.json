@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 30,
+      "daily_requests": 76,
       "last_request_date": "2026-10-23"
     },
     "gemini-3.1-flash-lite": {
@@ -270,7 +270,8 @@
     "augustine/civ22.txt": 46,
     "augustine/civ3.txt": 46,
     "augustine/civ4.txt": 40,
-    "augustine/civ5.txt": 50
+    "augustine/civ5.txt": 50,
+    "augustine/civ6.txt": 31
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -517,7 +518,8 @@
     "augustine/civ22.txt",
     "augustine/civ3.txt",
     "augustine/civ4.txt",
-    "augustine/civ5.txt"
+    "augustine/civ5.txt",
+    "augustine/civ6.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -541,6 +543,6 @@
     "2026-10-20": 544229,
     "2026-10-21": 717410,
     "2026-10-22": 617094,
-    "2026-10-23": 43359
+    "2026-10-23": 112203
   }
 }
