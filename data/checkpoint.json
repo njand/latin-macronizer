@@ -1,8 +1,8 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 456,
-      "last_request_date": "2026-10-24"
+      "daily_requests": 74,
+      "last_request_date": "2026-10-26"
     },
     "gemini-3.1-flash-lite": {
       "daily_requests": 141,
@@ -291,7 +291,7 @@
     "augustine/dia.txt": 13,
     "augustine/epistula.txt": 2,
     "augustine/fide.txt": 16,
-    "augustine/iulianus1.txt": 62
+    "augustine/iulianus1.txt": 103
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -558,7 +558,8 @@
     "augustine/conf9.txt",
     "augustine/dia.txt",
     "augustine/epistula.txt",
-    "augustine/fide.txt"
+    "augustine/fide.txt",
+    "augustine/iulianus1.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -583,6 +584,7 @@
     "2026-10-21": 717410,
     "2026-10-22": 617094,
     "2026-10-23": 751693,
-    "2026-10-24": 520097
+    "2026-10-24": 520097,
+    "2026-10-26": 65327
   }
 }
