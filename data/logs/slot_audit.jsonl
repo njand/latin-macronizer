@@ -279954,3 +279954,11 @@
 {"timestamp": "2026-10-26T19:56:32.794938+00:00", "file": "augustine/serm79.txt", "chunk_index": 3, "attempt": 1, "model_used": "gemini-3.5-flash-lite", "slot_raw": "[Latin]", "filled_value": "Latīn"}
 {"timestamp": "2026-10-26T19:56:32.794975+00:00", "file": "augustine/serm79.txt", "chunk_index": 3, "attempt": 1, "model_used": "gemini-3.5-flash-lite", "slot_raw": "[Latin]", "filled_value": "Latīn"}
 {"timestamp": "2026-10-26T19:56:32.795017+00:00", "file": "augustine/serm79.txt", "chunk_index": 3, "attempt": 1, "model_used": "gemini-3.5-flash-lite", "slot_raw": "[Christian]", "filled_value": "Christiān"}
+{"timestamp": "2026-10-26T19:57:55.403056+00:00", "file": "augustine/serm8.txt", "chunk_index": 1, "attempt": 1, "model_used": "gemini-3.5-flash-lite", "slot_raw": "[UIII]", "filled_value": "UIII"}
+{"timestamp": "2026-10-26T19:57:55.403165+00:00", "file": "augustine/serm8.txt", "chunk_index": 1, "attempt": 1, "model_used": "gemini-3.5-flash-lite", "slot_raw": "[Sermon]", "filled_value": "Sermon"}
+{"timestamp": "2026-10-26T19:57:55.403206+00:00", "file": "augustine/serm8.txt", "chunk_index": 1, "attempt": 1, "model_used": "gemini-3.5-flash-lite", "slot_raw": "<Augustīne|Augustīnē>", "filled_value": "Augustīne"}
+{"timestamp": "2026-10-26T20:01:34.373119+00:00", "file": "augustine/serm8.txt", "chunk_index": 3, "attempt": 1, "model_used": "gemini-3.5-flash-lite", "slot_raw": "[Classics]", "filled_value": "Classics"}
+{"timestamp": "2026-10-26T20:01:34.373218+00:00", "file": "augustine/serm8.txt", "chunk_index": 3, "attempt": 1, "model_used": "gemini-3.5-flash-lite", "slot_raw": "[Library]", "filled_value": "Library"}
+{"timestamp": "2026-10-26T20:01:34.373260+00:00", "file": "augustine/serm8.txt", "chunk_index": 3, "attempt": 1, "model_used": "gemini-3.5-flash-lite", "slot_raw": "[Latin]", "filled_value": "Latin"}
+{"timestamp": "2026-10-26T20:01:34.373316+00:00", "file": "augustine/serm8.txt", "chunk_index": 3, "attempt": 1, "model_used": "gemini-3.5-flash-lite", "slot_raw": "[Latin]", "filled_value": "Latin"}
+{"timestamp": "2026-10-26T20:01:34.373359+00:00", "file": "augustine/serm8.txt", "chunk_index": 3, "attempt": 1, "model_used": "gemini-3.5-flash-lite", "slot_raw": "[Christian]", "filled_value": "Christian"}
