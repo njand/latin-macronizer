@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 232,
+      "daily_requests": 237,
       "last_request_date": "2026-10-26"
     },
     "gemini-3.1-flash-lite": {
@@ -294,7 +294,8 @@
     "augustine/iulianus1.txt": 103,
     "augustine/iulianus2.txt": 77,
     "augustine/reg.txt": 10,
-    "augustine/serm1.txt": 2
+    "augustine/serm1.txt": 2,
+    "augustine/serm10.txt": 2
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -565,7 +566,8 @@
     "augustine/iulianus1.txt",
     "augustine/iulianus2.txt",
     "augustine/reg.txt",
-    "augustine/serm1.txt"
+    "augustine/serm1.txt",
+    "augustine/serm10.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -591,6 +593,6 @@
     "2026-10-22": 617094,
     "2026-10-23": 751693,
     "2026-10-24": 520097,
-    "2026-10-26": 192994
+    "2026-10-26": 215473
   }
 }

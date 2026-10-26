@@ -276864,3 +276864,10 @@
 {"timestamp": "2026-10-26T18:23:10.296935+00:00", "file": "augustine/serm1.txt", "chunk_index": 3, "attempt": 1, "model_used": "gemini-3.5-flash-lite", "slot_raw": "[Latin]", "filled_value": "Latin"}
 {"timestamp": "2026-10-26T18:23:10.296969+00:00", "file": "augustine/serm1.txt", "chunk_index": 3, "attempt": 1, "model_used": "gemini-3.5-flash-lite", "slot_raw": "[Latin]", "filled_value": "Latin"}
 {"timestamp": "2026-10-26T18:23:10.297000+00:00", "file": "augustine/serm1.txt", "chunk_index": 3, "attempt": 1, "model_used": "gemini-3.5-flash-lite", "slot_raw": "[Christian]", "filled_value": "Christian"}
+{"timestamp": "2026-10-26T18:23:47.950124+00:00", "file": "augustine/serm10.txt", "chunk_index": 1, "attempt": 1, "model_used": "gemini-3.5-flash-lite", "slot_raw": "[Sermon]", "filled_value": "Sermōn"}
+{"timestamp": "2026-10-26T18:23:47.950216+00:00", "file": "augustine/serm10.txt", "chunk_index": 1, "attempt": 1, "model_used": "gemini-3.5-flash-lite", "slot_raw": "<Augustīne|Augustīnē>", "filled_value": "Augustīne"}
+{"timestamp": "2026-10-26T18:26:57.430668+00:00", "file": "augustine/serm10.txt", "chunk_index": 3, "attempt": 1, "model_used": "gemini-3.5-flash-lite", "slot_raw": "[Classics]", "filled_value": "Classics"}
+{"timestamp": "2026-10-26T18:26:57.430770+00:00", "file": "augustine/serm10.txt", "chunk_index": 3, "attempt": 1, "model_used": "gemini-3.5-flash-lite", "slot_raw": "[Library]", "filled_value": "Library"}
+{"timestamp": "2026-10-26T18:26:57.430812+00:00", "file": "augustine/serm10.txt", "chunk_index": 3, "attempt": 1, "model_used": "gemini-3.5-flash-lite", "slot_raw": "[Latin]", "filled_value": "Latin"}
+{"timestamp": "2026-10-26T18:26:57.430848+00:00", "file": "augustine/serm10.txt", "chunk_index": 3, "attempt": 1, "model_used": "gemini-3.5-flash-lite", "slot_raw": "[Latin]", "filled_value": "Latin"}
+{"timestamp": "2026-10-26T18:26:57.430882+00:00", "file": "augustine/serm10.txt", "chunk_index": 3, "attempt": 1, "model_used": "gemini-3.5-flash-lite", "slot_raw": "[Christian]", "filled_value": "Christian"}
