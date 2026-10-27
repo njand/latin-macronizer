@@ -1,12 +1,12 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 382,
+      "daily_requests": 475,
       "last_request_date": "2026-10-27"
     },
     "gemini-3.1-flash-lite": {
-      "daily_requests": 65,
-      "last_request_date": "2026-10-26"
+      "daily_requests": 54,
+      "last_request_date": "2026-10-27"
     },
     "gemini-3.8-flash": {
       "daily_requests": 19,
@@ -337,7 +337,8 @@
     "augustine/trin11.txt": 28,
     "augustine/trin12.txt": 27,
     "augustine/trin13.txt": 42,
-    "augustine/trin14.txt": 48
+    "augustine/trin14.txt": 48,
+    "augustine/trin15.txt": 94
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -651,7 +652,8 @@
     "augustine/trin11.txt",
     "augustine/trin12.txt",
     "augustine/trin13.txt",
-    "augustine/trin14.txt"
+    "augustine/trin14.txt",
+    "augustine/trin15.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -678,6 +680,6 @@
     "2026-10-23": 751693,
     "2026-10-24": 520097,
     "2026-10-26": 894037,
-    "2026-10-27": 535081
+    "2026-10-27": 691427
   }
 }
