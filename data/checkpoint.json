@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 30,
+      "daily_requests": 41,
       "last_request_date": "2026-10-27"
     },
     "gemini-3.1-flash-lite": {
@@ -329,7 +329,8 @@
     "augustine/serm88.txt": 26,
     "augustine/serm9.txt": 2,
     "augustine/serm90.txt": 10,
-    "augustine/serm92.txt": 3
+    "augustine/serm92.txt": 3,
+    "augustine/serm95.txt": 7
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -635,7 +636,8 @@
     "augustine/serm88.txt",
     "augustine/serm9.txt",
     "augustine/serm90.txt",
-    "augustine/serm92.txt"
+    "augustine/serm92.txt",
+    "augustine/serm95.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -662,6 +664,6 @@
     "2026-10-23": 751693,
     "2026-10-24": 520097,
     "2026-10-26": 894037,
-    "2026-10-27": 95452
+    "2026-10-27": 107698
   }
 }
