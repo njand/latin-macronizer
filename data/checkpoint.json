@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 425,
+      "daily_requests": 464,
       "last_request_date": "2026-10-29"
     },
     "gemini-3.1-flash-lite": {
@@ -362,7 +362,8 @@
     "bacon/bacon.hist2.txt": 20,
     "bacon/bacon.hist3.txt": 31,
     "bacon/bacon.hist4.txt": 26,
-    "bacon/bacon.hist5.txt": 20
+    "bacon/bacon.hist5.txt": 20,
+    "bacon/bacon.hist6.txt": 18
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -730,6 +731,6 @@
     "2026-10-26": 894037,
     "2026-10-27": 926629,
     "2026-10-28": 384055,
-    "2026-10-29": 426854
+    "2026-10-29": 483547
   }
 }
