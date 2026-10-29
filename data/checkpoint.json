@@ -1,8 +1,8 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 438,
-      "last_request_date": "2026-10-28"
+      "daily_requests": 62,
+      "last_request_date": "2026-10-29"
     },
     "gemini-3.1-flash-lite": {
       "daily_requests": 276,
@@ -352,7 +352,7 @@
     "ave.phoen.txt": 10,
     "avianus.txt": 32,
     "avienus.ora.txt": 34,
-    "avienus.periegesis.txt": 33
+    "avienus.periegesis.txt": 77
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -680,7 +680,8 @@
     "aus.sept.sent.txt",
     "ave.phoen.txt",
     "avianus.txt",
-    "avienus.ora.txt"
+    "avienus.ora.txt",
+    "avienus.periegesis.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -708,6 +709,7 @@
     "2026-10-24": 520097,
     "2026-10-26": 894037,
     "2026-10-27": 926629,
-    "2026-10-28": 384055
+    "2026-10-28": 384055,
+    "2026-10-29": 49140
   }
 }
