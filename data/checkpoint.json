@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 142,
+      "daily_requests": 186,
       "last_request_date": "2026-10-29"
     },
     "gemini-3.1-flash-lite": {
@@ -355,7 +355,8 @@
     "avienus.periegesis.txt": 77,
     "axio.txt": 18,
     "bacon/bacon.distributio.txt": 24,
-    "bacon/bacon.epistola.txt": 2
+    "bacon/bacon.epistola.txt": 2,
+    "bacon/bacon.hist1.txt": 22
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -687,7 +688,8 @@
     "avienus.periegesis.txt",
     "axio.txt",
     "bacon/bacon.distributio.txt",
-    "bacon/bacon.epistola.txt"
+    "bacon/bacon.epistola.txt",
+    "bacon/bacon.hist1.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -716,6 +718,6 @@
     "2026-10-26": 894037,
     "2026-10-27": 926629,
     "2026-10-28": 384055,
-    "2026-10-29": 106157
+    "2026-10-29": 152628
   }
 }
