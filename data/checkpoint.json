@@ -1,7 +1,7 @@
 {
   "model_usage": {
     "gemini-3.5-flash-lite": {
-      "daily_requests": 82,
+      "daily_requests": 123,
       "last_request_date": "2026-10-30"
     },
     "gemini-3.1-flash-lite": {
@@ -364,7 +364,8 @@
     "bacon/bacon.hist4.txt": 26,
     "bacon/bacon.hist5.txt": 20,
     "bacon/bacon.hist6.txt": 23,
-    "bacon/bacon.hist7.txt": 33
+    "bacon/bacon.hist7.txt": 33,
+    "bacon/bacon.hist8.txt": 21
   },
   "completed_files": [
     "vergil/aen1.txt",
@@ -705,7 +706,8 @@
     "bacon/bacon.hist4.txt",
     "bacon/bacon.hist5.txt",
     "bacon/bacon.hist6.txt",
-    "bacon/bacon.hist7.txt"
+    "bacon/bacon.hist7.txt",
+    "bacon/bacon.hist8.txt"
   ],
   "daily_bytes_processed": {
     "2026-10-02": 275210,
@@ -735,6 +737,6 @@
     "2026-10-27": 926629,
     "2026-10-28": 384055,
     "2026-10-29": 483547,
-    "2026-10-30": 77121
+    "2026-10-30": 133817
   }
 }
